@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+    background: rgb(22, 221, 55);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+        
+}
+.slide{
+    height: 80vh;
+    border-radius: 20px;
+    margin:10px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease-in-out; /* animation*/
+}
+.slide h3{
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    margin: 0;
+    opacity: 0; /*PROZRA4NOST*/
+}
+        
+
+.slide.activ {
+    flex:10;
+}
+
+.slide.activ h3 {
+    opacity: 1;/*PROZRA4NOST*/
+    transition: opacity 0.3s ease-in 0.4s; /* animation*/
+}
